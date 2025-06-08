@@ -1,6 +1,6 @@
 import { AdvantageCard, ArticleCard, Button, Review, ScrollArea, ScrollBar } from "@/components"
 import { homeData } from "@/data/homeData"
-import { Gamepad, Gamepad2, Headphones, RotateCcw, Swords } from "lucide-react"
+import { Gamepad2, Headphones, RotateCcw, Swords } from "lucide-react"
 import Image from "next/image"
 
 export default function Minecraft() {

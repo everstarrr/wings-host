@@ -1,4 +1,4 @@
-import { Button, ServersBar } from "@/components";
+import { ServersBar } from "@/components";
 import { ServersSelect } from "@/components/shared/servers-select";
 import { auth } from "@/lib/auth";
 import Link from "next/link";
