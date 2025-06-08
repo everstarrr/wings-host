@@ -26,7 +26,7 @@ async function Servers() {
                 </Link>
                 <Link href="/servers/create">
                     <div className="bg-[url('/images/servers/garrysmod.png')] bg-center bg-cover bg-no-repeat aspect-[317/178] flex justify-center items-center hover:scale-105 transition-all duration-200 cursor-pointer">
-                        <h3 className="text-4xl">Garry's Mod</h3>
+                        <h3 className="text-4xl">Garry&apos;s Mod</h3>
                     </div>
                 </Link>
                 <Link href="/servers/create">

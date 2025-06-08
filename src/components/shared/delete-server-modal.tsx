@@ -1,4 +1,3 @@
-import { History } from "lucide-react";
 import { Button } from "../ui";
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog"
 
