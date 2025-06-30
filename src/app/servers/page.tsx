@@ -6,8 +6,8 @@ import { redirect } from "next/navigation";
 
 async function Servers() {
 
-    const session = await auth();
-    if (!session) redirect("/login");
+    // const session = await auth();
+    // if (!session) redirect("/login");
 
     return (
         <main className="lg:w-screen lg:h-screen flex lg:flex-row flex-col lg:mt-16 mt-24 lg:bg-transparent bg-background-mobile lg:gap-0 gap-12 lg:px-0 px-8 lg:pb-0 pb-32">

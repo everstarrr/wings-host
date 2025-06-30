@@ -30,8 +30,8 @@ export const Header = () => {
         <header className="w-full bg-secondary fixed left-0 top-0 z-20 border-b border-b-white/10 px-7 lg:py-0 py-2">
             <div className="max-w-7xl flex justify-between items-center mx-auto">
                 <Sheet>
-                    <SheetTrigger>
-                        <Menu size={24} className="lg:hidden block" />
+                    <SheetTrigger className="lg:hidden block">
+                        <Menu size={24} />
                     </SheetTrigger>
                     <SheetContent side="left" className="flex flex-col gap-3 p-6 border-0">
                         <SheetTitle />
@@ -42,7 +42,7 @@ export const Header = () => {
                     </SheetContent>
                 </Sheet>
                 <Link href="/">
-                    <Image src="/images/header-logo.png" alt="Logo" width={294} height={56} className="lg:h-full lg:w-full h-9 w-48" />
+                    <Image src="/images/header-logo.png" alt="Logo" width={294} height={56} className="lg:h-full lg:w-full lg:block hidden" />
                 </Link>
                 <nav className="lg:flex hidden px-4 py-6 gap-8 leading-[19px]">
                     <NavLink href="/profile" title="Личный кабинет" />

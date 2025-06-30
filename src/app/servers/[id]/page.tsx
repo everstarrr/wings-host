@@ -2,6 +2,7 @@
 import { Button, ServersBar } from "@/components";
 import { DeleteServerModal } from "@/components/shared/delete-server-modal";
 import { ServersSelect } from "@/components/shared/servers-select";
+import { serversTitles } from "@/data/servers-data";
 import { TriangleAlert } from "lucide-react";
 import Link from "next/link";
 import { use } from "react";
@@ -16,6 +17,8 @@ function ServerPage({ params }: { params: Promise<{ id: string }> }) {
 
     const { id } = use(params)
 
+    const serverId = id == "88ab0642" ? 0 : 1
+
     return (
         <main className="w-screen lg:h-screen flex lg:flex-row flex-col lg:mt-16 mt-24 lg:bg-transparent bg-background-mobile lg:px-0 px-8">
             <ServersBar id={id} />
@@ -25,7 +28,11 @@ function ServerPage({ params }: { params: Promise<{ id: string }> }) {
                     <Button font="md" className="w-full">Создать сервер</Button>
                 </Link>
             </div>
-            <section className="lg:bg-secondary-5 lg:pl-5 lg:pr-32 py-12 flex flex-col gap-6 w-full">
+            <section className="lg:bg-background-3 lg:pl-5 lg:pr-32 py-12 flex flex-col gap-6 w-full">
+                <div className="flex items-center gap-6">
+                    <h1 className="text-6xl">{serversTitles[serverId].title}</h1>
+                    <p>{serversTitles[serverId].ip_address}</p>
+                </div>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-5">
                     <CharCard title="Баланс" data="500 ₽" />
                     <CharCard title="Процессор" data="0,5 CPU" />

@@ -9,13 +9,13 @@ import { redirect } from "next/navigation";
 
 async function Profile() {
 
-    const session = await auth();
-    if (!session) redirect("/login");
+    // const session = await auth();
+    // if (!session) redirect("/login");
 
     return (
-        <main className="py-12 lg:px-32 px-8 flex flex-col gap-12 mt-16 lg:bg-secondary-5 bg-background-mobile">
+        <main className="py-12 lg:px-32 px-8 flex flex-col gap-12 mt-16 lg:bg-background-3 bg-background-mobile">
             <section className="flex flex-col gap-6">
-                <h2 className="lg:text-5xl text-lg lg:font-manrope font-benzin">Профиль</h2>
+                <h1 className="lg:text-6xl text-lg lg:font-manrope font-benzin">Профиль</h1>
                 <div className="flex gap-6 items-center">
                     <Image src="/images/avatar.png" alt="Avatar" width={96} height={96} className="w-24 h-24 rounded-full" />
                     <div className="flex flex-col gap-2.5">
