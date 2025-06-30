@@ -31,7 +31,7 @@ function CreateServer() {
             <ServersBar />
             <ServersSelect className="lg:hidden" />
             <section className="lg:p-12 flex flex-col flex-1 max-w-3xl lg:mx-auto gap-12 ">
-                <h1 className="text-6xl">Создать сервер</h1>
+                <h1 className="lg:text-6xl text-xl">Создать сервер</h1>
                 <div className="flex flex-col gap-6">
                     <div className="w-full bg-[url('/images/servers/minecraft.png')] aspect-[793/447]
                  bg-center bg-cover bg-no-repeat flex justify-center items-center lg:text-7xl text-3xl">

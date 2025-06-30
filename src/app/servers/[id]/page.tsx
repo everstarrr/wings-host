@@ -30,7 +30,7 @@ function ServerPage({ params }: { params: Promise<{ id: string }> }) {
             </div>
             <section className="lg:bg-background-3 lg:pl-5 lg:pr-32 py-12 flex flex-col gap-6 w-full">
                 <div className="flex items-center gap-6">
-                    <h1 className="text-6xl">{serversTitles[serverId].title}</h1>
+                    <h1 className="xl:text-6xl">{serversTitles[serverId].title}</h1>
                     <p>{serversTitles[serverId].ip_address}</p>
                 </div>
                 <div className="grid lg:grid-cols-4 grid-cols-1 gap-5">

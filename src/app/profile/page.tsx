@@ -15,7 +15,7 @@ async function Profile() {
     return (
         <main className="py-12 lg:px-32 px-8 flex flex-col gap-12 mt-16 lg:bg-background-3 bg-background-mobile">
             <section className="flex flex-col gap-6">
-                <h1 className="lg:text-6xl text-lg lg:font-manrope font-benzin">Профиль</h1>
+                <h1 className="lg:text-6xl text-xl lg:font-manrope font-benzin">Профиль</h1>
                 <div className="flex gap-6 items-center">
                     <Image src="/images/avatar.png" alt="Avatar" width={96} height={96} className="w-24 h-24 rounded-full" />
                     <div className="flex flex-col gap-2.5">
